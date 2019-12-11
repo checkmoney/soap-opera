@@ -62,7 +62,7 @@ export class MrSolomons {
     date,
   }: MrSolomonsParams): string => {
     const query = stringify({
-      date: format(date, 'YYYY-MM-DD'),
+      date: format(date, 'yyyy-MM-dd'),
       amount,
       from,
       to,
