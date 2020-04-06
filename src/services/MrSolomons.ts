@@ -2,17 +2,16 @@ import Axios, { AxiosInstance } from 'axios';
 import { format } from 'date-fns';
 import { stringify } from 'querystring';
 import { Cache, InMemoryProvider } from '@solid-soda/cache';
+import { plainToClass } from 'class-transformer';
+import { validateOrReject } from 'class-validator';
+
+import { ConvertedValue } from '../types/ConvertedValue';
 
 interface MrSolomonsParams {
   amount: string;
   from: string;
   to: string;
   date: Date;
-}
-
-interface MrSolomonsResponse {
-  result: string;
-  accurate: boolean;
 }
 
 export class MrSolomons {
@@ -44,9 +43,12 @@ export class MrSolomons {
       return cached;
     }
 
-    const {
-      data: { accurate, result },
-    } = await this.http.get<MrSolomonsResponse>(requestUrl);
+    const { data: rawData } = await this.http.get(requestUrl);
+
+    const data = plainToClass(ConvertedValue, rawData);
+    await validateOrReject(data);
+
+    const { accurate, result } = data;
 
     if (accurate) {
       await setCached(result);
