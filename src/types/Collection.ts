@@ -2,8 +2,8 @@ import { IsNumber, IsArray } from 'class-validator';
 
 export class Collection<T> {
   @IsArray()
-  items: T[];
+  readonly items: T[];
 
   @IsNumber()
-  total: number;
+  readonly total: number;
 }

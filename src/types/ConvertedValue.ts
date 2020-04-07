@@ -2,8 +2,8 @@ import { IsNumberString, IsBoolean } from 'class-validator';
 
 export class ConvertedValue {
   @IsNumberString()
-  result: string;
+  readonly result: string;
 
   @IsBoolean()
-  accurate: boolean;
+  readonly accurate: boolean;
 }

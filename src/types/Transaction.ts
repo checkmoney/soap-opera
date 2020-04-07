@@ -1,4 +1,10 @@
-import { IsNumberString, Length, IsDate } from 'class-validator';
+import {
+  IsNumberString,
+  Length,
+  IsDate,
+  IsString,
+  MinLength,
+} from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class Transaction {
@@ -11,4 +17,8 @@ export class Transaction {
   @Type(() => Date)
   @IsDate()
   readonly date: Date;
+
+  @IsString()
+  @MinLength(1)
+  readonly category: string;
 }
