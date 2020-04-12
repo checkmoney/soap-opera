@@ -16,6 +16,7 @@ interface MrSolomonsParams {
 
 export class MrSolomons {
   private readonly http: AxiosInstance;
+
   private readonly cache: Cache;
 
   constructor(url: string, cache?: Cache) {

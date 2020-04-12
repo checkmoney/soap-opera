@@ -76,12 +76,12 @@ export class MrButcher {
       throw new InvalidResponseException(Array, rawTransactions, 'mr-butcher');
     }
 
-    const transactions = rawTransactions.map(raw =>
+    const transactions = rawTransactions.map((raw) =>
       plainToClass(Transaction, raw),
     );
 
     await Promise.all(
-      transactions.map(transaction => validateOrReject(transaction)),
+      transactions.map((transaction) => validateOrReject(transaction)),
     );
 
     return transactions;
