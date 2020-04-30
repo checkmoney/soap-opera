@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/checkmoney/soap-opera/compare/v1.3.0...v1.4.0) (2020-04-30)
+
+### Features
+
+- **det-bell:** add method for fetching default currency ([be7d361](https://github.com/checkmoney/soap-opera/commit/be7d3612e1c1b81a8ca91332bec26a1b7027b9c5))
+
 ## [1.3.0](https://github.com/checkmoney/soap-opera/compare/v1.2.0...v1.3.0) (2020-04-30)
 
 ### Features
