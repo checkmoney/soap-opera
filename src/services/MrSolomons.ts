@@ -6,6 +6,7 @@ import { plainToClass } from 'class-transformer';
 import { validateOrReject } from 'class-validator';
 
 import { ConvertedValue } from '../types/ConvertedValue';
+import { Transaction } from '../types/Transaction';
 
 interface MrSolomonsParams {
   amount: string;
@@ -27,6 +28,27 @@ export class MrSolomons {
     });
 
     this.cache = cache || new Cache(new InMemoryProvider());
+  }
+
+  async convertTransaction(
+    transaction: Transaction,
+    targetCurrency: string,
+  ): Promise<Transaction> {
+    const params: MrSolomonsParams = {
+      from: transaction.currency,
+      to: targetCurrency,
+      amount: transaction.amount,
+      date: transaction.date,
+    };
+
+    const convertedAmount = await this.convert(params);
+
+    return new Transaction(
+      convertedAmount,
+      targetCurrency,
+      transaction.date,
+      transaction.category,
+    );
   }
 
   async convert(params: MrSolomonsParams): Promise<string> {

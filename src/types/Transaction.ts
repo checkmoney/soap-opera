@@ -21,4 +21,11 @@ export class Transaction {
   @IsString()
   @MinLength(1)
   readonly category: string;
+
+  constructor(amount: string, currency: string, date: Date, category: string) {
+    this.amount = amount;
+    this.currency = currency;
+    this.date = date;
+    this.category = category;
+  }
 }
