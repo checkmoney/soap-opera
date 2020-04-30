@@ -19,6 +19,16 @@ export class MrButcher {
     });
   }
 
+  async eagerFetchIds(token: string) {
+    const allIds: string[] = [];
+
+    for await (const id of this.lazyFetchIds(token)) {
+      allIds.push(id);
+    }
+
+    return allIds;
+  }
+
   async *lazyFetchIds(token: string) {
     const REQUEST_LIMIT = 100;
 
