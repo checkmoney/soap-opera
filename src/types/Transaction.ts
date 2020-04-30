@@ -8,6 +8,9 @@ import {
 import { Type } from 'class-transformer';
 
 export class Transaction {
+  @IsString()
+  readonly id: string;
+
   @IsNumberString()
   readonly amount: string;
 
@@ -22,7 +25,14 @@ export class Transaction {
   @MinLength(1)
   readonly category: string;
 
-  constructor(amount: string, currency: string, date: Date, category: string) {
+  constructor(
+    id: string,
+    amount: string,
+    currency: string,
+    date: Date,
+    category: string,
+  ) {
+    this.id = id;
     this.amount = amount;
     this.currency = currency;
     this.date = date;

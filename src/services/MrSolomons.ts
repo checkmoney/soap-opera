@@ -44,6 +44,7 @@ export class MrSolomons {
     const convertedAmount = await this.convert(params);
 
     return new Transaction(
+      transaction.id,
       convertedAmount,
       targetCurrency,
       transaction.date,
