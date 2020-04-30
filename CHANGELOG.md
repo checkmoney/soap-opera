@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/checkmoney/soap-opera/compare/v1.5.0...v1.6.0) (2020-04-30)
+
+### Features
+
+- add id to transaction ([b77bd74](https://github.com/checkmoney/soap-opera/commit/b77bd743c44413185c8280c2c38f91c5dbf3d0ab))
+- export transaction interface ([b85c16e](https://github.com/checkmoney/soap-opera/commit/b85c16eed100232690ee0e13e48e3fd3caf041f1))
+
 ## [1.5.0](https://github.com/checkmoney/soap-opera/compare/v1.4.0...v1.5.0) (2020-04-30)
 
 ### Features
