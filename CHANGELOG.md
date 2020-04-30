@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/checkmoney/soap-opera/compare/v1.4.0...v1.5.0) (2020-04-30)
+
+### Features
+
+- **mr-butcher:** add eager fetch ids ([b7bbf92](https://github.com/checkmoney/soap-opera/commit/b7bbf92a83fc8bb03c48c2457d24f08133d86311))
+
 ## [1.4.0](https://github.com/checkmoney/soap-opera/compare/v1.3.0...v1.4.0) (2020-04-30)
 
 ### Features
