@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/checkmoney/soap-opera/compare/v1.6.0...v1.6.1) (2020-05-01)
+
+### Bug Fixes
+
+- **me-butcher:** add new way to stop fetching ([277ca9c](https://github.com/checkmoney/soap-opera/commit/277ca9cbf3b8b18bf60047ffd8442e1bf3b8b81a))
+
 ## [1.6.0](https://github.com/checkmoney/soap-opera/compare/v1.5.0...v1.6.0) (2020-04-30)
 
 ### Features
