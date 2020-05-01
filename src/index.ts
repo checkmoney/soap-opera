@@ -3,3 +3,5 @@ export { MrButcher } from './services/MrButcher';
 export { DetBell } from './services/DetBell';
 
 export { Transaction } from './types/Transaction';
+export { PeriodType } from './types/PeriodType';
+export { DateRange } from './types/DateRange';
