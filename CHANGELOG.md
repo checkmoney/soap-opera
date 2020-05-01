@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/checkmoney/soap-opera/compare/v1.6.2...v1.7.0) (2020-05-01)
+
+### Features
+
+- add some common structures ([67755be](https://github.com/checkmoney/soap-opera/commit/67755be7273f118eb6ff363533f8114b934e6de0))
+
 ### [1.6.2](https://github.com/checkmoney/soap-opera/compare/v1.6.1...v1.6.2) (2020-05-01)
 
 ### Bug Fixes
