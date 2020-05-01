@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/checkmoney/soap-opera/compare/v1.6.1...v1.6.2) (2020-05-01)
+
+### Bug Fixes
+
+- **mr-butcher:** fix break logic in lazy fetching ([6ef2ea8](https://github.com/checkmoney/soap-opera/commit/6ef2ea8287c07984208d917d8cae0727b7755758))
+
 ### [1.6.1](https://github.com/checkmoney/soap-opera/compare/v1.6.0...v1.6.1) (2020-05-01)
 
 ### Bug Fixes
