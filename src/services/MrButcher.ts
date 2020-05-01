@@ -40,13 +40,13 @@ export class MrButcher {
       const data = await this.fetchIds(token, offset, REQUEST_LIMIT);
 
       const { items, total } = data;
+      yield* items;
 
       offset += REQUEST_LIMIT;
+
       if (offset >= total || items.length === 0) {
         break;
       }
-
-      yield* items;
     }
   }
 
