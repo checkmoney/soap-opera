@@ -42,7 +42,7 @@ export class MrButcher {
       const { items, total } = data;
 
       offset += REQUEST_LIMIT;
-      if (offset >= total) {
+      if (offset >= total || items.length === 0) {
         break;
       }
 
