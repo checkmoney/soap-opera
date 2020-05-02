@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/checkmoney/soap-opera/compare/v1.8.0...v1.8.1) (2020-05-02)
+
+### Bug Fixes
+
+- add miss type export ([ab1567a](https://github.com/checkmoney/soap-opera/commit/ab1567ad9cc5e892cbbe859e27be291ef5e49d63))
+
 ## [1.8.0](https://github.com/checkmoney/soap-opera/compare/v1.7.0...v1.8.0) (2020-05-02)
 
 ### Features
