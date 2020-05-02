@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/checkmoney/soap-opera/compare/v1.7.0...v1.8.0) (2020-05-02)
+
+### Features
+
+- **det-bell:** add decode method ([9668d72](https://github.com/checkmoney/soap-opera/commit/9668d72c6ffc86df5bf0b3751380e3c5a778e421))
+
 ## [1.7.0](https://github.com/checkmoney/soap-opera/compare/v1.6.2...v1.7.0) (2020-05-01)
 
 ### Features
