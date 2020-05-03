@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/checkmoney/soap-opera/compare/v1.8.1...v1.9.0) (2020-05-03)
+
+### Features
+
+- **dr-khomyuk:** add statistics service client ([2556e9e](https://github.com/checkmoney/soap-opera/commit/2556e9ed7bf9a9258254f819563f42edf79a7789))
+
 ### [1.8.1](https://github.com/checkmoney/soap-opera/compare/v1.8.0...v1.8.1) (2020-05-02)
 
 ### Bug Fixes
