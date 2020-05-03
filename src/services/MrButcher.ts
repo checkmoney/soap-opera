@@ -4,9 +4,9 @@ import { validateOrReject } from 'class-validator';
 import { stringify } from 'querystring';
 
 import { addTokenToHttpConfig } from './utils/addTokenToHttpConfig';
-import { InvalidResponseException } from './exceptions/InvalidResponseException';
 import { Transaction } from '../types/Transaction';
 import { Collection } from '../types/Collection';
+import { plainArrayToArrayOfClasses } from './utils/plainArrayToArrayOfClasses';
 
 export class MrButcher {
   private readonly http: AxiosInstance;
@@ -82,12 +82,9 @@ export class MrButcher {
       addTokenToHttpConfig(token, {}),
     );
 
-    if (!Array.isArray(rawTransactions)) {
-      throw new InvalidResponseException(Array, rawTransactions, 'mr-butcher');
-    }
-
-    const transactions = rawTransactions.map((raw) =>
-      plainToClass(Transaction, raw),
+    const transactions = plainArrayToArrayOfClasses(
+      Transaction,
+      rawTransactions,
     );
 
     await Promise.all(
