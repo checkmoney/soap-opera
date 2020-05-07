@@ -12,5 +12,6 @@ export { Average } from './types/statistics/Average';
 export { DatePeriod } from './types/statistics/DatePeriod';
 export { PeriodAmount } from './types/statistics/PeriodAmount';
 export { PeriodCategories } from './types/statistics/PeriodCategories';
+export { Grow } from './types/statistics/Grow';
 
 export { TransformBigInt } from './utils/TransformBigInt';

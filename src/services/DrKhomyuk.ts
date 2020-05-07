@@ -1,14 +1,15 @@
 import Axios, { AxiosInstance } from 'axios';
 import { plainToClass } from 'class-transformer';
 
-import { DateRange } from '../types/DateRange';
-import { PeriodType } from '../types/PeriodType';
-import { Average } from '../types/statistics/Average';
-import { PeriodAmount } from '../types/statistics/PeriodAmount';
+import { plainArrayToArrayOfClasses } from './utils/plainArrayToArrayOfClasses';
 import { PeriodCategories } from '../types/statistics/PeriodCategories';
 import { addTokenToHttpConfig } from './utils/addTokenToHttpConfig';
+import { PeriodAmount } from '../types/statistics/PeriodAmount';
 import { dateRangeForQuery } from './utils/dateRangeToQuery';
-import { plainArrayToArrayOfClasses } from './utils/plainArrayToArrayOfClasses';
+import { Average } from '../types/statistics/Average';
+import { PeriodType } from '../types/PeriodType';
+import { DateRange } from '../types/DateRange';
+import { Grow } from '../types/statistics/Grow';
 
 export class DrKhomyuk {
   private readonly http: AxiosInstance;
@@ -45,6 +46,15 @@ export class DrKhomyuk {
     );
 
     return plainToClass(Average, rawAverage);
+  }
+
+  async getGrow(token: string, periodType: PeriodType): Promise<Grow> {
+    const { data: rawGrow } = await this.http.get(
+      `v1/statistics/grow?periodType=${periodType}`,
+      addTokenToHttpConfig(token, {}),
+    );
+
+    return plainToClass(Grow, rawGrow);
   }
 
   async fetchAmount(
