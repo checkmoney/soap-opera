@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/checkmoney/soap-opera/compare/v1.9.0...v1.10.0) (2020-05-07)
+
+### Features
+
+- **dr-khomyuk:** add grow endpoint ([a79cc76](https://github.com/checkmoney/soap-opera/commit/a79cc76bdec191fb4d2adaa719b400ef9511ccb8))
+
 ## [1.9.0](https://github.com/checkmoney/soap-opera/compare/v1.8.1...v1.9.0) (2020-05-03)
 
 ### Features
